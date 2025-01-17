@@ -5,7 +5,7 @@ public class FindPeakinArr {
         while(start<=end){
             int mid=(start+end)/2;
             if((mid==0||arr[mid]>arr[mid-1])&&(mid==arr.length-1||arr[mid]>arr[mid+1])){
-                System.out.println("The peark element is "+arr[mid]);
+                System.out.println("The peak element is "+arr[mid]);
                 return;
             }
         if(mid>0 && arr[mid-1]>arr[mid]){
