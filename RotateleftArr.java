@@ -6,14 +6,16 @@ public class RotateleftArr{
         k=k%n;
         int rotated[]=new int[n];
         int index=0;
-        for(int i=k;i<arr.length;i++){
-          rotated[index++]=arr[i];
+        for(int i=k;i<n;i++){
+            rotated[index++]=arr[i];
         }
         for(int i=0;i<k;i++){
             rotated[index++]=arr[i];
         }
-        for(int val:rotated){
-            System.out.print(val+" ");
+        System.out.print("Left side rotated Array is :");
+
+        for(int num:rotated){
+            System.out.print(num+" ");
         }
     }
 }
