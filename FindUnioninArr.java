@@ -2,15 +2,14 @@ import java.util.*;
 public class FindUnioninArr {
     public static void main(String[] args) {
         int arr1[]={1,2,3,4,5,6};
-        int arr2[]={1,2,5,6,7,8,9,10};
-        HashSet<Integer>union =new HashSet<>();
-        for(int val:arr1){
-            union.add(val);
+        int arr2[]={4,5,6,7,8,9};
+        HashSet<Integer>Union=new HashSet<>();
+        for(int num:arr1){
+            Union.add(num);
         }
         for(int val:arr2){
-            union.add(val);
+            Union.add(val);
         }
-        System.out.print(union+" ");
-
+        System.out.print("The union of two array is :"+Union);
     }
 }

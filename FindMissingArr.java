@@ -6,6 +6,6 @@ public class FindMissingArr {
         for(int val:arr){
             totalsum=totalsum-val;
         }
-        System.out.println("The missing value is "+totalsum);
+        System.out.println("The missing element in the array is "+totalsum);
     }
 }
