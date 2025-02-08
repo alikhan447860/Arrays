@@ -13,6 +13,5 @@ public class StockBuyArr {
             }
         }
         System.out.println("Maximum profit is "+maxprofit);
-
     }
 }
