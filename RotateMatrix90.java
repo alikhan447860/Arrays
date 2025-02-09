@@ -5,9 +5,7 @@ public class RotateMatrix90 {
             {4, 5, 6},
             {7, 8, 9}
         };
-
         int n = matrix.length;
-
         // Step 1: Transpose the matrix
         for (int i = 0; i < n; i++) {
             for (int j = i; j < n; j++) {
@@ -17,7 +15,6 @@ public class RotateMatrix90 {
                 matrix[j][i] = temp;
             }
         }
-
         // Step 2: Reverse each row
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n / 2; j++) {
@@ -27,7 +24,6 @@ public class RotateMatrix90 {
                 matrix[i][n - j - 1] = temp;
             }
         }
-
         // Step 3: Print the rotated matrix
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
