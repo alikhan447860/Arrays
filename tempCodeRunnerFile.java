@@ -1,12 +1,12 @@
-public class CountTheoccinArr {
+public class FindhowmanytimearrRotated {
     public static void main(String[] args) {
-        int arr[]={2, 2 , 3 , 3 , 3 , 3 , 4};
-        int k=3,count=0;
+        int arr[]={4,5,6,7,0,1,2,3};
+        int rotation=0;
         for(int i=0;i<arr.length;i++){
-            if(arr[i]==k){
-                count++;
+            if(arr[i]>arr[i+1]){
+                rotation=i+1;
             }
         }
-       System.out.println("The element is found "+count+" times in array");
+        System.out.println("The array is rotated "+rotation+" times");
     }
 }
