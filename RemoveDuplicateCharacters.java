@@ -1,15 +1,15 @@
 import java.util.*;
 public class RemoveDuplicateCharacters {
     public static void main(String[] args) {
-        String input="abbcdaef";
-        LinkedHashSet<Character>set=new LinkedHashSet<>();
-        for(char c:input.toCharArray()){
-            set.add(c);
-        }
-        StringBuilder result=new StringBuilder();
-        for(char c:set){
-            result.append(c);
-        }
-        System.out.println("The unique string is :"+result);
+      String s="aabcdefgg";
+      LinkedHashSet<Character>lHashSet=new LinkedHashSet<>();
+      for(char c:s.toCharArray()){
+        lHashSet.add(c);
+      }
+      StringBuilder sb=new StringBuilder();
+      for(Character c:lHashSet){
+        sb.append(c);
+      }
+      System.out.println("String after removing Duplicate character: "+sb);
     }
 }
